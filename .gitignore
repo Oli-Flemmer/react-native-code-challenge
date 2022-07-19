@@ -1,0 +1,7 @@
+
+.vscode
+app/test-report/native/cobertura-coverage.xml
+app/.eslintcache
+app/junit.xml
+
+.DS_Store
