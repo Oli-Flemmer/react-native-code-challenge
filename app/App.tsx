@@ -8,35 +8,23 @@
  * @format
  */
 
-import React from 'react';
-import {ApolloClient, ApolloProvider} from '@apollo/client';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
-import buildGraphqlClient from './src/modules/graphqlClient/buildGraphqlClient';
-import MainNavigation from './src/navigation/mainNavigation';
-import LoadingSpinner from './src/components/LoadingSpinner';
+import React, { useState } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import SignIn from 'app/src/screens/SignIn';
+import AuthenticatedIndex from 'app/src/screens/AuthenticatedIndex';
+const Stack = createNativeStackNavigator();
 const App = () => {
-  const [apolloClient, setApolloClient] =
-    React.useState<ApolloClient<any> | null>(null);
 
-  const getApolloClient = async () => {
-    const client = await buildGraphqlClient();
-    setApolloClient(client);
-  };
+  const [authenticated, setAuthenticated] = useState(false)
+  if (authenticated) {
+    return (
+      <AuthenticatedIndex />
+    )
+  }
 
-  React.useEffect(() => {
-    getApolloClient();
-  }, []);
-
-  if (!apolloClient) return <LoadingSpinner fullscreen />;
-
-  return (
-    <ApolloProvider client={apolloClient}>
-      <SafeAreaProvider>
-        <MainNavigation />
-      </SafeAreaProvider>
-    </ApolloProvider>
-  );
+  return <SignIn setAuthenticated={setAuthenticated} />
 };
 
 export default App;

@@ -1,7 +1,7 @@
 import React from 'react';
-import SignOutView from '../Authentication/SignOut/SignOutView';
+import { Text } from '@flemmer-digital/mobile-app-components';
 
 const AuthenticatedIndex = () => {
-  return <SignOutView />;
+  return <Text>Implement app here</Text>;
 };
 export default AuthenticatedIndex;
