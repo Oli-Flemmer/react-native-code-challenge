@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from '@flemmer-digital/mobile-app-components';
+import Text from 'src/components/Text';
 
 const AuthenticatedIndex = () => {
   return <Text>Implement app here</Text>;

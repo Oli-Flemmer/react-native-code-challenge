@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './SignInViewStyles';
-import { Flex, Text } from '@flemmer-digital/mobile-app-components';
+import Flex from 'src/components/Flex'
+import Text from 'src/components/Text';
 import { Credentials } from './SignInContainer'
 
 interface Props {
