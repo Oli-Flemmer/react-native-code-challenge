@@ -9,12 +9,8 @@
  */
 
 import React, { useState } from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 import SignIn from 'app/src/screens/SignIn';
 import AuthenticatedIndex from 'app/src/screens/AuthenticatedIndex';
-const Stack = createNativeStackNavigator();
 const App = () => {
 
   const [authenticated, setAuthenticated] = useState(false)

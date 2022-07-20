@@ -1,3 +1,5 @@
+#### The Challenge
+This readme is to help you setup the project, information on the challenge can be found [here](./CodeChallenge.md)
 ### Getting Started
 1. Clone the repo
 2. `sh initialSetup.sh` (might take a couple of attempts) 

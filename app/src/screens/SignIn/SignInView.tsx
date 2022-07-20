@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './SignInViewStyles';
-import Flex from 'src/components/Flex'
-import Text from 'src/components/Text';
+import Flex from 'app/src/components/Flex'
+import Text from 'app/src/components/Text';
 import { Credentials } from './SignInContainer'
 
 interface Props {
