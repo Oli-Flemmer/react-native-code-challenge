@@ -15,3 +15,6 @@ Unit Tests: `yarn test`
 
 ### Typechecking
 Typescript check: `yarn typecheck`
+
+### Prebuilt Components
+There are prebuilt components in `src/components` to save you time building your own.

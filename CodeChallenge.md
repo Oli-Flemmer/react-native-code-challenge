@@ -19,7 +19,7 @@ When you are finished please open a pull request.
 #### Authentication
   * Create a form, which requires the user to enter the correct credentials to login. See `src/screens/SignIn/SignInContainer` for the required credentials.
   * Credentials should be validated and error messages should be displayed to the user.
-  * Once the user has logged in, the `src/screens/AuthenticatedIndex` component should be rendered. This has already been implemented.
+  * Once the user has logged in, the `src/screens/AuthenticatedIndex` component should be rendered. A rough `authenticate` method has been written but you will need to modify/correct it in order to meet the requirements.
 #### Displaying a List of Restaurants
   * Your app should have a text input that allows a user to enter an address in the format `"{street address}, {zip code}"`
   * Your app should fetch data on restaurants that deliver to that address, using the delivery.com API (see more below)
@@ -29,7 +29,7 @@ When you are finished please open a pull request.
 ## 4. What We're Looking For
   * Typing: We love typescript and encourage you to type everything
   * Testing: We also love unit tests and encourage you to write tests for all scenarios
-  * Clean code: Everyone loves clean code 🤓
+  * Clean code: Everyone loves clean code and we encourage you to refactor any of the existing code that you think could be improved. But don't worry about refactoring anything in `src/components`
 
 ## 5. Using the delivery.com API
 
