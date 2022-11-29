@@ -167,7 +167,7 @@ const SignInView = ({ authenticate }: Props): JSX.Element => {
 
             <SizedBox height={16} />
 
-            <Primary style={{ width: "100%" }} text='Go' onPress={onSubmit} />
+            <Primary testID="Go" style={{ width: "100%" }} text='Go' onPress={onSubmit} />
 
           </KeyboardAvoidingView>
         </SafeAreaView>

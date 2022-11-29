@@ -1,21 +1,17 @@
-// import React from 'react';
-// import Primary, { PrimaryProps } from './primary';
-// import { fireEvent, render as testRender, screen } from '@testing-library/react-native';
-// import { Screen } from '@react-navigation/elements';
+import React from 'react';
+import Primary, { PrimaryProps } from './primary';
+import { fireEvent, render as testRender, screen } from '@testing-library/react-native';
+import { Screen } from '@react-navigation/elements';
 
-// const render = (props?: Partial<PrimaryProps>) =>
-//   testRender(<Primary text="text" onPress={() => { }} {...props} />);
 
-// it('renders correctly', () => {
-//   const { getByText } = render();
-//   expect(getByText('text')).toBeTruthy();
 
-//   const onPress = jest.fn();
+it('renders correctly', () => {
+	const onPress = jest.fn();
+	const render = (props?: Partial<PrimaryProps>) =>
+		testRender(<Primary text="text" onPress={() => onPress()} {...props} />);
+	const { getByText } = render();
+	expect(getByText('text')).toBeTruthy();
+	fireEvent.press(getByText("text"));
+	expect(onPress).toBeCalledTimes(1);
 
-//   render(<Primary text="GoChecked" onPress={() => onPress()} />);
-
-//   test('Calls Function only one Time when Press button', () => {
-//     fireEvent.press(screen.getByText('GoChecked'))
-//   })
-
-// });
+});

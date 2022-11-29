@@ -5,7 +5,7 @@ import { View, Text, Image } from 'react-native';
 import cardStyle from './styles';
 
 
-interface Props {
+export interface Props {
 	data: IResturant
 }
 
@@ -19,6 +19,9 @@ const Card = ({ data }: Props) => {
 			<Image
 				source={{ uri: logo_url }}
 				style={cardStyle.image}
+				accessible
+				accessibilityLabel={"imageofResturant"}
+				testID={"testofImage"}
 			/>
 			<View style={cardStyle.lblContainer}>
 				<Text style={cardStyle.name}>{name}</Text>

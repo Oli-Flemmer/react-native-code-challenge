@@ -3,7 +3,7 @@ import { View, Text, FlatList, ListRenderItem, StyleSheet, TextInput } from 'rea
 
 import Card from 'app/src/components/Card';
 import LoadingSpinner from 'app/src/components/LoadingSpinner';
-import { height, width } from 'app/constants';
+import { width } from 'app/constants';
 
 
 interface ILocation {
@@ -33,21 +33,27 @@ const AuthenticatedIndex = () => {
 
   useEffect(() => {
     (async (): Promise<void> => {
-      setLoading(true);
-      const lowered: string = query.toLowerCase();
-      const addUnderScore: string = lowered.split(' ').join('_');
-      const final: string = addUnderScore.replace(',', '');
-      console.log(final, 'looking cool111111');
-      let result = await fetch(`https://dcom-native-interview.s3.amazonaws.com/api/merchant/query/${final}`);
-      const data = await result.json();
-      if (result.ok) {
-        const merchants = data?.merchants;
-        setData(merchants);
+      try {
+        setLoading(true);
+        const lowered: string = query.toLowerCase();
+        const addUnderScore: string = lowered.split(' ').join('_');
+        const final: string = addUnderScore.replace(',', '');
+        let result = await fetch(`https://dcom-native-interview.s3.amazonaws.com/api/merchant/query/${final}`);
+        const data = await result.json();
+        if (result.ok) {
+          const merchants = data?.merchants;
+          setData(merchants);
+        }
+        else {
+          console.log('something went wrong', data, 'cool one');
+        }
+        setLoading(false);
       }
-      else {
+      catch (err) {
+        setLoading(false);
         console.log('something went wrong', data, 'cool one');
       }
-      setLoading(false);
+
     })();
   }, [query]);
 
