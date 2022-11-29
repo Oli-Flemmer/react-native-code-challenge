@@ -147,7 +147,6 @@ const SignInView = ({ authenticate }: Props): JSX.Element => {
 
                     <DatePicker modal open={open} date={value}
                       onConfirm={(date) => {
-                        console.log(date);
                         onChange(date);
                         setOpen(false);
                       }}
@@ -179,3 +178,5 @@ const SignInView = ({ authenticate }: Props): JSX.Element => {
 
 
 export default SignInView;
+
+
