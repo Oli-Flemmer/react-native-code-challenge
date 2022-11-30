@@ -11,11 +11,12 @@ export interface ButtonProps {
   text: React.ReactNode | string;
   textStyle?: TextStyle;
   disabled?: boolean;
+  testID?: string,
 }
 
-const Button: React.FC<ButtonProps> = ({ style, onPress, text, disabled, textStyle }) => {
+const Button: React.FC<ButtonProps> = ({ style, onPress, text, disabled, textStyle, testID }) => {
   return (
-    <PressableOpacity onPress={onPress} style={[styles.container, style]} disabled={disabled}>
+    <PressableOpacity testID={testID} onPress={onPress} style={[styles.container, style]} disabled={disabled}>
       <Flex
         direction="row"
         justifyContent="center"

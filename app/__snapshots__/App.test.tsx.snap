@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly App 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#000000",
+      "flex": 1,
+    }
+  }
+>
+  <RCTSafeAreaView
+    emulateUnlessSupported={true}
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 16,
+            "paddingVertical": 32,
+          },
+          Object {
+            "paddingBottom": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 28,
+            "fontWeight": "700",
+            "lineHeight": 34,
+          }
+        }
+      >
+        Resturant App
+      </Text>
+      <View
+        style={
+          Object {
+            "height": 8,
+            "width": undefined,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "rgba(235, 235, 245, 0.6)",
+            "fontSize": 17,
+            "fontWeight": "400",
+            "lineHeight": 22,
+          }
+        }
+      >
+        Login in to your account
+      </Text>
+      <View
+        style={
+          Object {
+            "height": 32,
+            "width": undefined,
+          }
+        }
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "rgb(58, 58, 60)",
+              "borderRadius": 8,
+              "flexDirection": "row",
+              "height": 48,
+              "paddingHorizontal": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "rgba(235, 235, 245, 0.6)",
+                "fontSize": 15,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "width": 80,
+              }
+            }
+          >
+            Username
+          </Text>
+          <TextInput
+            autoCapitalize="none"
+            autoCorrect={false}
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            onSubmitEditing={[Function]}
+            returnKeyType="next"
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "flex": 1,
+              }
+            }
+            testID="username"
+            textContentType="username"
+            value=""
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 16,
+            "width": undefined,
+          }
+        }
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "rgb(58, 58, 60)",
+              "borderRadius": 8,
+              "flexDirection": "row",
+              "height": 48,
+              "paddingHorizontal": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "rgba(235, 235, 245, 0.6)",
+                "fontSize": 15,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "width": 80,
+              }
+            }
+          >
+            Password
+          </Text>
+          <TextInput
+            autoCapitalize="none"
+            autoCorrect={false}
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            onSubmitEditing={[Function]}
+            returnKeyType="done"
+            secureTextEntry={true}
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "flex": 1,
+              }
+            }
+            testID="password"
+            textContentType="password"
+            value=""
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 16,
+            "width": undefined,
+          }
+        }
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "rgb(58, 58, 60)",
+              "borderRadius": 8,
+              "flexDirection": "row",
+              "height": 48,
+              "paddingHorizontal": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "rgba(235, 235, 245, 0.6)",
+                "fontSize": 15,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "width": 80,
+              }
+            }
+          >
+            Select DOB
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                  "flex": 1,
+                  "marginLeft": 20,
+                },
+              ]
+            }
+          >
+            25/11/2022
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 16,
+            "width": undefined,
+          }
+        }
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#FF478C",
+            "borderRadius": 20,
+            "height": 50,
+            "opacity": 1,
+            "overflow": "hidden",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          style={
+            Object {
+              "alignContent": undefined,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "flexWrap": undefined,
+              "height": "100%",
+              "justifyContent": "center",
+              "width": "100%",
+            }
+          }
+          testID="flex"
+        >
+          <Text
+            collapsable={false}
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "Arial",
+                "fontSize": 16,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Go
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTSafeAreaView>
+</View>
+`;

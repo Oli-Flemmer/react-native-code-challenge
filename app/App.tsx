@@ -13,7 +13,7 @@ import SignIn from 'app/src/screens/SignIn';
 import AuthenticatedIndex from 'app/src/screens/AuthenticatedIndex';
 const App = () => {
 
-  const [authenticated, setAuthenticated] = useState(false)
+  const [authenticated, setAuthenticated] = useState<boolean>(false)
   if (authenticated) {
     return (
       <AuthenticatedIndex />
